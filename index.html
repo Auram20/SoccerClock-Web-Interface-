@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1>Clock Score Interface - Viz</h1>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm text-center">
+                <p>Time</p>
+                <input class="minutes" id="minutes"> :
+                <input class="seconds" id="seconds">
+            </div>
+                <div class="col-sm text-center">
+                <p>Team A</p>
+                <input>
+            </div>
+            <div class="col-sm text-center">
+                <p>Score A</p>
+                <input class="scoreInput">
+            </div>
+            <div class="col-sm text-center">
+                <p>Score B</p>
+                <input class="scoreInput">
+            </div>
+            <div class="col-sm text-center">
+                <p>Team B</p>
+                <input>
+            </div>
+        </div>
+
+        <div class="row">
+                <p>Extra-Time</p>
+                <input class="minutes" id="extraMinutes"> :
+                <input class="seconds" id="extraSeconds">
+        </div>
+     
+
+        
+        <br/>
+        <div class="row">
+            <button class="btn btn-success" id="startFhalf"> START FIRST HALF </button>
+            <button class="btn btn-success" id="startShalf"> START SECOND HALF </button>
+        </div>
+
+        <br/>
+        <div class="row">    
+            <button class="btn btn-warning" id="pause"> PAUSE CHRONO </button>
+            <button class="btn btn-primary" id="continue"> CONTINUE CHRONO </button>
+            <button class="btn btn-danger" id="reset-clock"> RESET CHRONO </button>
+        
+            <div class="col-sm text-center">
+                <p>Reset the Timer Manually to : </p>
+                <input class="minutes" id="manualMinutes"> :
+                <input class="seconds" id="manualSeconds">
+                <button id="manualReset"> RESET </button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
